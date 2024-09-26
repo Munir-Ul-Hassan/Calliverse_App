@@ -223,25 +223,20 @@ class ChatbotScreen extends StatelessWidget {
              ),
            ),
            
-               Container(
-                  margin: const EdgeInsets.only(bottom: 8),
-                 // margin: const EdgeInsets.symmetric(horizontal: 5), // Space between text field and button
-                 child: ElevatedButton(
-                   onPressed: () {
-            print('Send button pressed');
-                   },
-                   style: ElevatedButton.styleFrom(
-            shape: CircleBorder(), backgroundColor: Colors.blue, // Make it circular
-            padding: EdgeInsets.all(20), // Background color
-                   ),
-                   child: const Icon(
-            
-            Icons.send,
-            size: 28,
-            color: Colors.white, // Icon color
-                   ),
-                 ),
-               ),
+                Container(
+  margin: const EdgeInsets.only(bottom: 8),
+  child: CircleAvatar(
+                                backgroundColor: Colors.blue,
+                                child: IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                      Icons.send,
+                                      color: Colors.white), // Icon color
+                                  // splashColor: Colors.transparent, // Remove splash color
+                                ),
+                              ),
+ 
+),
              ],
            ),
          )
